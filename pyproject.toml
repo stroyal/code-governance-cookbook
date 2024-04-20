@@ -1,0 +1,14 @@
+[project]
+name = "code-governance-cookbook"
+version = "0.0.1-a1"
+dependencies = [
+    "mkdocs==1.5.3",
+    "mkdocs-material==9.5.18",
+    "mkdocstrings[python]>=0.18",
+    "ruff==0.4.0",
+    "pandas==2.2.2",
+]
+
+[tool.ruff]
+extend-include = ["*.ipynb"]
+output-format = "github"
