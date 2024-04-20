@@ -22,6 +22,6 @@ jobs:
           cache: "npm"
       - name: Install dependencies
         run: |
-          npm install @ls-lint/ls-lint
+          npm install -g @ls-lint/ls-lint
       - name: Run ls-lint
         run: ls-lint
