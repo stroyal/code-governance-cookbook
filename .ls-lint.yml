@@ -1,0 +1,3 @@
+ls:
+    src/*: # matches any sequence of non-path-separators
+        .py: kebab-case
