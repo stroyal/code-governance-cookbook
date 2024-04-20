@@ -1,5 +1,11 @@
 name: Ruff Linter
-on: push
+on:
+  push:
+  pull_request:
+    branches:
+      - main
+      - dev
+      - 'feature/**'
 jobs:
   build:
     runs-on: ubuntu-latest
