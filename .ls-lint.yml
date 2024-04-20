@@ -1,6 +1,6 @@
 ls:
     .py: snake_case
-    .ipybn: snake_case
+    .ipynb: snake_case
     .md: snake_case | SCREAMING_SNAKE_CASE
 
 ignore:
