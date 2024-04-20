@@ -24,4 +24,4 @@ jobs:
         run: |
           npm install @ls-lint/ls-lint
       - name: Run ls-lint
-        run: ruff check --output-format=github .
+        run: ls-lint
