@@ -1,3 +1,7 @@
 ls:
-    src/*: # matches any sequence of non-path-separators
-        .py: snake_case
+    .py: snake_case
+    .ipybn: snake_case
+    .md: snake_case | SCREAMING_SNAKE_CASE
+
+ignore:
+    - venv
