@@ -1,0 +1,51 @@
+site_name: Code Governance Cookbook
+
+site_description: A repository to build out general patterns to meet a set of standards for code governance.
+
+nav:
+  - Home: index.md
+  - Documentation:
+    - Getting Started: getting_started.md
+    - API Reference: reference.md
+    - User Guide: user_guide.md
+
+theme:
+  name: material
+  palette:
+    primary: teal
+  features:
+    - navigation.indexes
+    - content.code.copy
+  icon:
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+
+plugins:
+  - search
+  - mkdocstrings
+  - blog:
+      blog_dir: blog
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
